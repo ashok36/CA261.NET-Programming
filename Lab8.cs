@@ -38,7 +38,7 @@ namespace DDL_and_DML
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlCommand cmdinsert = new SqlCommand("insert into Narendra values(" + textBox1.Text + ",'" + textBox2.Text + "'," + textBox3.Text + ",'" + textBox4.Text + "'," + textBox5.Text + ")", connection);
+            SqlCommand cmdinsert = new SqlCommand("insert into Ashok values(" + textBox1.Text + ",'" + textBox2.Text + "'," + textBox3.Text + ",'" + textBox4.Text + "'," + textBox5.Text + ")", connection);
             cmdinsert.CommandType = CommandType.Text;
             cmdinsert.ExecuteNonQuery();
             MessageBox.Show("Data Inserted");
